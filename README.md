@@ -10,7 +10,7 @@ Advanced Memory Read/Write class
   - [x] Module Object
   - [x] others ...
   
-  NtReadVirtualMemory/NtWriteVirtualMemory vs ReadProcessMemory/WriteProcessMemory
+  NtReadVirtualMemory/NtWriteVirtualMemory vs ReadProcessMemory/WriteProcessMemory                              :
   https://guidedhacking.com/threads/make-your-external-cheats-super-fast-read-writeprocessmemory-vs-ntread-ntwritevirtualmemory.15194/ |
   https://www.unknowncheats.me/forum/general-programming-and-reversing/285926-writeprocessmemory-lot-slower-ntwritevirtualmemory-windows-10-a.html
 
