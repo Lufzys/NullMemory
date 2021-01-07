@@ -13,7 +13,6 @@ Advanced Memory Read/Write class
 ## Example usage
 
 ```csharp
-            NullMemory nullMem = new NullMemory("csgo");
             Enums.InitializeResult Result = nullMem.Initialize();
             MessageBox.Show(Result.ToString(), "Null Memory", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if(Result == Enums.InitializeResult.Succesfully)
@@ -55,10 +54,10 @@ Advanced Memory Read/Write class
 
                 */
 
-                int EngineBase = nullMem.ReadMemory<int>(engine.Address + clientstate);
+                int EngineBase = nullMem.Read<int>(engine.Address + clientstate);
                 string resultText = "dwClientState => 0x" + clientstate.ToString("X") + Environment.NewLine +
                                  "dwClientState_State => 0x" + (clientstate_state).ToString("X") + Environment.NewLine +
-                                 "dwState => " + nullMem.ReadMemory<int>(EngineBase + clientstate_state).ToString();
+                                 "dwState => " + nullMem.Read<int>(EngineBase + clientstate_state).ToString();
                 MessageBox.Show(resultText, "Null Memory", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
