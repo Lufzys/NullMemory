@@ -67,10 +67,10 @@ Advanced Memory Read/Write class
 
 ```
 
-## Example usage - Output
+## Example usage - Output | Old
 ![alt text](https://github.com/Lufzy/Advanced-Memory/blob/master/example_output.PNG?raw=true)
 
-  - [Signature Scan working correctly]
+  - [Signature Scan working correctly] | Old
 ![alt text](https://github.com/Lufzy/Advanced-Memory/blob/master/memorys_example.PNG?raw=true)
 
 ## License
