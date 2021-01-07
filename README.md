@@ -3,6 +3,7 @@
 Advanced Memory Read/Write class
 
   - [x] Memory Read/Write
+  - [x] Kernel(NtVirtualMemory) Memory Read/Write
   - [x] WorldToScreen function
   - [x] FindDMAAddy function
   - [x] Advanced Signature Scan function
