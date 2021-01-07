@@ -61,10 +61,10 @@ namespace NullMemory.Demo
 
                 */
 
-                int EngineBase = new NullMemory.Kernel(nullMem).Read<int>((IntPtr)engine.Address + clientstate);
+                int EngineBase = nullMem.Read<int>(engine.Address + clientstate);
                 string resultText = "dwClientState => 0x" + clientstate.ToString("X") + Environment.NewLine +
                                  "dwClientState_State => 0x" + (clientstate_state).ToString("X") + Environment.NewLine +
-                                 "dwState => " + new NullMemory.Kernel(nullMem).Read<int>((IntPtr)EngineBase + clientstate_state).ToString();
+                                 "dwState => " + nullMem.Read<int>(EngineBase + clientstate_state).ToString();
                 MessageBox.Show(resultText, "Null Memory", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

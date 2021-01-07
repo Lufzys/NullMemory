@@ -112,7 +112,7 @@ namespace NullMemory
         private int m_iNumberOfBytesRead;
         private int m_iNumberOfBytesWritten;
 
-        public  T ReadMemory<T>(int address) where T : struct
+        public  T Read<T>(int address) where T : struct
         {
             int ByteSize = Marshal.SizeOf(typeof(T));
 
@@ -170,7 +170,7 @@ namespace NullMemory
             return ConvertToFloatArray(buffer);
         }
 
-        public  void WriteMemory<T>(int address, object Value) where T : struct
+        public  void Write<T>(int address, object Value) where T : struct
         {
             byte[] buffer = StructureToByteArray(Value);
 
