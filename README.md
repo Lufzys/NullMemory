@@ -1,4 +1,4 @@
-# Advanced Memory class
+# NULL Memory
 
 Advanced Memory Read/Write class
 
